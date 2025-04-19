@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# MySQL socket & config files (if any)
+*.cnf
+*.pid
+*.sock
+
+# Logs and database dumps
+*.log
+*.sql~
+*.dump
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python installer logs
+pip-log.txt
+
+# Backup files
+*.bak
+*.swp
+
+# Test results
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+
+# PyInstaller
+dist/
+build/
+*.spec
