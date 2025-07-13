@@ -10,8 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Pull your GitHub code
-                git 'https://github.com/harikrishnank061/Employee-Management-System-Python-MySQL-Database-Connectivity'
-            }
+                git 'https://github.com/harikrishnank061/Employee-Management-System-Python-MySQL-Database-Connectivity/blob/main'
         }
 
         stage('SonarQube Analysis') {
