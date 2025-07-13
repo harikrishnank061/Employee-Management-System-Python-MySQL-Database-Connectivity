@@ -3,7 +3,7 @@ import mysql.connector as sql
 import datetime as dt
 import time
 import sys
-
+#github-jenkins-sonarqube-integretion
 conn = sql.connect(host='localhost', user='root', passwd='root', database='employees')
 cur = conn.cursor()
 
