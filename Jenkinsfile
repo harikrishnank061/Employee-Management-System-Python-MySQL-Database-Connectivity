@@ -17,7 +17,7 @@ pipeline {
                 withSonarQubeEnv('SonarQube_server') {
                     bat """
                         sonar-scanner ^
-                          -Dsonar.projectKey=employee-management ^
+                          -Dsonar.projectKey=GIthub_jenkins_sonar ^
                           -Dsonar.sources=. ^
                           -Dsonar.language=py ^
                           -Dsonar.sourceEncoding=UTF-8 ^
