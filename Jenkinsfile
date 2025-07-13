@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        // Use installed SonarQube scanner from Jenkins global tools
-        sonarQubeScanner 'SonarQube Scanner'
-    }
-
     environment {
         // Jenkins credentials ID for SonarQube token
         SONAR_TOKEN = credentials('Github')
