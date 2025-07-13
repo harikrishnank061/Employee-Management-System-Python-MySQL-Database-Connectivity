@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        SONAR_TOKEN = credentials('Github')  // Jenkins credential for SonarQube token
+        SONAR_TOKEN = credentials('github_s')  // Jenkins credential for SonarQube token
     }
 
     stages {
@@ -17,7 +17,7 @@ pipeline {
                 withSonarQubeEnv('SonarQube_server') {
                     bat """
                         sonar-scanner ^
-                          -Dsonar.projectKey=GIthub_jenkins_sonar ^
+                          -Dsonar.projectKey=github-jenkins-sonar^
                           -Dsonar.sources=. ^
                           -Dsonar.language=py ^
                           -Dsonar.sourceEncoding=UTF-8 ^
